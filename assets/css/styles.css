@@ -1,0 +1,563 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bakbak One';
+}
+
+.logo{
+    width: 64px;
+    padding: 10px;
+}
+
+.navFixed{
+    position: fixed;
+}
+.navBar{
+    background-color: #333333;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+
+.navBar__menu{
+    display: flex;
+}
+
+.navBar__menu > li{
+    margin-top: 5px;
+    padding: 10px;
+    list-style-type: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navBar__menu > li > a, .navBar__menu > li > a:visited{
+    text-decoration: none;
+    color: #eeeeee;
+}
+
+.navBar__menu li a:hover{
+    color: #cc0000;
+}
+
+.lineaRoja{
+    height: 7px;
+    background-color: #cc0000;
+    position: sticky;
+    top: 50px;
+}
+
+.destacados{
+    display: flex;
+    justify-content: center;
+}
+
+.destacados__info{
+    width: 900px;
+    margin-top: 40px;
+}
+
+.destacados__titulo--icono{
+    max-width: 24px;
+}
+
+.destacados__titulo--texto{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.destacados__contenido--imagen{
+    margin-top: 10px;
+    max-width: 900px;
+}
+
+.destacados__contenido--descripcion{
+    background-color: black;
+    margin-top: -6px;
+}
+
+.destacados__contenido--descripcion a, .destacados__contenido--descripcion a:visited{
+    text-decoration: none;
+    color: #eeeeee;
+}
+
+.destacados__contenido--titulo{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    color: #eeeeee;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.destacados__contenido--texto{
+    color: #eeeeee;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.destacados__publicaciones{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.destacados__publicaciones--barras1{
+    width: 100px;
+    height: 5px;
+    background-color: #cc0000;
+}
+
+.destacados__publicaciones--barras2, .destacados__publicaciones--barras3{
+    width: 100px;
+    height: 5px;
+    background-color: #333333;
+}
+
+.division{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.divisor{
+    width: 300px;
+    height: 5px;
+    background-color: #333333;
+}
+
+.noticias{
+    display: flex;
+    justify-content: center;
+}
+
+.noticias__info{
+    width: 900px;
+    margin-top: 15px;
+}
+
+.noticias__cards{
+    width: 900px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 130px ;
+}
+
+.noticias__tarjeta{
+    margin-top: 15px;
+    width: 400px;
+    height: 225px;
+}
+
+.noticias__soloTexto{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.noticias__tarjeta--descripcion{
+    background-color: black;
+    margin-top: -6px;
+    color: #eeeeee;
+    padding: 10px;
+}
+
+.noticias__tarjeta--descripcion a, .noticias__tarjeta--descripcion a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.noticias__tarjeta--descripcion h4:hover{
+    border-bottom: 2px solid #eeeeee;
+    display: inline;
+}
+
+.noticias__tarjeta--descripcion p{
+    margin-top: 10px;
+}
+
+.noticias__soloTexto{
+    column-gap: 20px;
+    max-width: 750px;
+}
+
+.noticias__soloTexto a, .noticias__soloTexto a:visited{
+    text-decoration: none;
+    color: #333333;
+}
+
+.noticias__soloTexto a:hover{
+    color: #cc0000;
+}
+
+.multimedia{
+    display: flex;
+    justify-content: center;
+}
+
+.video{
+    width: 900px;
+    margin-top: 15px;
+}
+
+.video iframe{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.footerBar{
+    margin-top: 40px;
+    background-color: #333333;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.footerBar span{
+    margin-top: 30px;
+    color: #eeeeee;
+    font-weight: bold;
+}
+
+.logo__footer{
+    max-width: 64px;
+    position: relative;    
+    top: 20px;
+    left: -120px;
+}
+
+.social__ig{
+    max-width: 32px;
+    max-height: 32px;
+    position: relative;
+    top: 25px;
+    left: 120px;
+}
+
+.social__tw{
+    max-width: 32px;
+    max-height: 32px;
+    position: relative;
+    top: 25px;
+    left: 150px;
+}
+
+.social__fb{
+    max-width: 32px;
+    max-height: 32px;
+    position: relative;
+    top: 25px;
+    left: 180px;
+}
+
+/* CSS: tienda.html  */
+
+.ofertas{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.ofertas__info{
+    width: 900px;
+    margin-top: 40px;
+}
+
+.ofertas__fondo{
+    background-color: #cc0000;
+    width: 900px;
+    height: 450px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.oferta{
+    margin: 50px auto;
+    width: 230px;
+    background-color: #eeeeee;
+}
+
+.oferta__descripcion{
+    background-color: #333333;
+    height: 50px;
+    margin-top: -6px;
+    display: flex;
+    justify-content: right;
+    padding: 10px;
+    color: #eeeeee;
+}
+
+.oferta__descripcion--icono{
+    position: relative;
+    left: -10px;
+    top: -2px;
+}
+
+.oferta__descripcion a, .oferta__descripcion a:visited{
+    color: #eeeeee;
+    text-decoration: none;
+}
+
+.titulos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.titulos__info{
+    margin-top: 45px;
+    width: 900px;
+}
+
+.titulos__info--filtro{
+    margin-top: 35px;
+    max-width: 150px;
+}
+
+.titulos__info--filtro ul{
+    margin-top: 10px;
+    display: flex;
+    column-gap: 5px;
+}
+
+.titulos__juegos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.titulos__juegos--tarjeta{
+    margin-top: 45px;
+    width: 230px;
+    height: 320px;
+}
+
+
+.titulos__juegos--boton{
+    max-width: 100px;
+    height: 50px;
+    position: relative;
+    top: -6px;
+    left: 130px;
+    background-color: #cc0000;
+}
+
+.titulos__juegos--boton img{
+    max-width: 36px;
+    position: relative;
+    top: 8px;
+    left: 30px;
+}
+
+.titulos__paginas ul{
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    margin-top: 55px;
+    font-size: 20px;
+}
+
+.titulos__paginas ul li, .titulos__paginas a, .titulos__paginas a:visited{
+    list-style-type: none;
+    display: inline;
+    text-decoration: none;
+    color: #333333;
+}
+
+.titulos__paginas ul li:hover{
+    color: #cc0000;
+}
+
+/* CSS: acerca.html  */
+
+.acercaDe{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.acercaDe__descripcion{
+    margin-top: 45px;
+    width: 900px;
+    max-height: 520px;
+}
+
+.acercaDe__descripcion--titulo{
+    font-size: 45px;
+}
+
+.acercaDe__descripcion--info{
+    width: 300px;
+}
+
+.acercaDe__descripcion--imagen{
+    position: relative;
+    top: -370px;
+    left: 450px;
+}
+
+.acercaDe__desarrollador{
+    display: flex;
+    justify-content: center;
+}
+
+.acercaDe__desarrollador--info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.acercaDe__desarrollador--imagen{
+    border-radius: 50%;
+    width: 128px;
+}
+
+/* CSS: contacto.html */
+
+.contacto{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.contactos__titulo{
+    width: 900px;
+    margin-top: 40px;
+}
+
+.contactos__titulo h1{
+    display: inline;
+}
+
+.contacto__formulario{
+    margin-top: 20px;
+    width: 480px;
+    
+}
+
+.contacto__formulario form legend{
+    margin: 15px;
+}
+
+.contacto__formulario form label{
+    margin: 15px;
+    padding: 10px;
+}
+
+.contacto__formulario sup{
+    color: #cc0000;
+}
+
+.contacto__formulario form fieldset textarea{
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.contacto__formulario button{
+    margin: 20px;
+    padding: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.contacto__formulario--terminos{
+    margin-left: 30px;
+}
+
+.footerBar__contacto{
+    margin-top: 40px;
+    background-color: #333333;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+}
+
+.footerBar__contacto span{
+    margin-top: 30px;
+    color: #eeeeee;
+    font-weight: bold;
+}
+
+.contacto__formulario--boletin{
+    margin-left: 30px;
+}
+
+.comunidad{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.foro__titulo{
+    margin-top: 35px;
+}
+
+.foro__titulo a, .foro__titulo a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.foro__titulo fieldset{
+    width: 500px;
+    margin-top: 20px;
+    border-radius: 10px 10px 5px 5px;
+    padding-bottom: 20px;
+}
+
+.foro__titulo--imagen{
+    width: 22px;
+}
+
+.foro__titulo legend{
+    margin-left: 20px;
+}
+
+.foro__posteo{
+    display: flex;
+    margin: 20px;
+    width: 500px;
+    height: 80px;
+    border: 2px solid black;
+}
+
+.foro__posteo:hover{
+    border-color: #cc0000;
+    cursor: pointer;
+}
+
+.foro__posteo > img {
+    width: 80px;
+    height: 80px;
+    margin-top: -3px;
+    padding: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.foro__posteo--info{
+    margin-top: 20px;
+    line-height: 15px;
+    width: 300px;
+}
+
+.foro__posteo--mensajes{
+    position: relative;
+    left: 50px;
+    top: 30px;
+}
+
+.foro__posteo--mensajesCantidad{
+    position: relative;
+    left: 60px;
+    top: 27px;
+}

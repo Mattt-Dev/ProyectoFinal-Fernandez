@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/x-icon" href="../img/GP.png">
+    <link href='https://fonts.googleapis.com/css?family=Bakbak One' rel='stylesheet'>
+
+    <title>Games Portal - Contacto</title>
+</head>
+<body>
+    <nav class="navBar">
+        <a href="/index.html"><img src="/assets/img/GP.png" alt="" class="logo"></a>
+            <ul class="navBar__menu">
+                <li><a href="/index.html">INICIO</a></li>
+                <li><a href="/assets/pages/tienda.html">TIENDA</a></li>
+                <li><a href="/assets/pages/comunidad.html">COMUNIDAD</a></li>
+                <li><a href="/assets/pages/contacto.html">CONTACTO</a></li>
+                <li><a href="/assets/pages/acerca.html">ACERCA DE</a></li>
+            </ul>
+    </nav>
+        <div class="lineaRoja"></div>
+    <main>
+        <section class="contacto">
+            <div class="contactos__titulo">
+                <img src="/assets/img/mail.png" alt="" class="destacados__titulo--icono">
+                <h1>CONTACTO</h1>
+                <p>Dejanos tus consultas o sugerencias a continuacion.</p>
+                <div class="contacto__formulario">
+                    <form action="" method="get">
+                        <fieldset>
+                            <legend>
+                                &nbsp Contactanos &nbsp
+                            </legend>
+                                <label for="nombre">Nombre
+                                <input type="text" name="nombre" required><sup>  *</sup>
+                                <br><br>
+                                </label>
+                                <label for="nombre">Apellido
+                                <input type="text" name="apellido" required><sup> *</sup>
+                                <br><br>
+                                </label>
+                                <label for="nombre">Mail
+                                <input type="email" name="mail" required><sup> *</sup>
+                                <br><br>
+                                </label>
+                                <label for="nombre">Mensaje<sup> *</sup>
+                                <textarea name="mensaje" id="" cols="50" rows="14" placeholder="Tu mensaje..." required></textarea>
+                                <br><br>
+                                </label>
+                                <input class="contacto__formulario--terminos" type="checkbox" name="terminos" value="acepto" required>
+                                <span>Acepto los terminos y condiciones.</span><sup> *</sup>
+                                <br><br>
+                                <input class="contacto__formulario--boletin" type="checkbox" name="boletin" value="acepto" checked>
+                                <span>Deseo suscribirme al boletin de noticias semanal.</span>
+                                <br><br>
+                                <button type="submit">Enviar</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footerBar__contacto">
+            <a href="./index.html"><img src="/assets/img/GP.png" alt="" class="logo__footer"></a>
+            <span>Games Portal TM 2022 - Todos los derechos reservados.</span>
+            <a href=""><img src="/assets/img/instagram.png" alt="" class="social__ig"></a>
+            <a href=""><img src="/assets/img/twitter.png" alt="" class="social__tw"></a>
+            <a href=""><img src="/assets/img/facebook.png" alt="" class="social__fb"></a>
+        </div>
+    </footer>
+</body>
+</html>
