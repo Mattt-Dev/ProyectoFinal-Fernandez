@@ -8,7 +8,34 @@
 .logo {
   width: 64px;
   padding: 10px;
+  animation-name: giro-logo;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
 }
+
+@keyframes giro-logo {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 .navFixed {
   position: fixed;
@@ -49,6 +76,10 @@
 .destacados__info {
   width: 900px;
   margin-top: 40px;
+}
+
+.carousel-inner {
+  cursor: pointer;
 }
 
 .destacados__titulo--icono {
