@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,70 +8,111 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" type="image/x-icon" href="../img/GP.png">
     <link href='https://fonts.googleapis.com/css?family=Bakbak One' rel='stylesheet'>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Games Portal - Contacto</title>
 </head>
+
 <body>
-    <nav class="navBar">
-        <a href="/index.html"><img src="/assets/img/GP.png" alt="" class="logo"></a>
-            <ul class="navBar__menu">
-                <li><a href="/index.html">INICIO</a></li>
-                <li><a href="/assets/pages/tienda.html">TIENDA</a></li>
-                <li><a href="/assets/pages/comunidad.html">COMUNIDAD</a></li>
-                <li><a href="/assets/pages/contacto.html">CONTACTO</a></li>
-                <li><a href="/assets/pages/acerca.html">ACERCA DE</a></li>
-            </ul>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../img/GP.png" alt="" class="logo"></a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./tienda.html">TIENDA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./comunidad.html">COMUNIDAD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./acerca.html">ACERCA DE</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-        <div class="lineaRoja"></div>
+    <div class="lineaRoja"></div>
     <main>
         <section class="contacto">
-            <div class="contactos__titulo">
-                <img src="/assets/img/mail.png" alt="" class="destacados__titulo--icono">
-                <h1>CONTACTO</h1>
-                <p>Dejanos tus consultas o sugerencias a continuacion.</p>
+            <div class="contactos__titulo row mt-3 p-2">
+                <i class="fa-solid fa-envelope destacados__titulo--icono"><span
+                        class="destacados__titulo--texto mx-2">CONTACTO</span></i>
+                <p class="mt-2">Dejanos tus consultas o sugerencias a continuacion.</p>
                 <div class="contacto__formulario">
-                    <form action="" method="get">
-                        <fieldset>
-                            <legend>
-                                &nbsp Contactanos &nbsp
-                            </legend>
-                                <label for="nombre">Nombre
-                                <input type="text" name="nombre" required><sup>  *</sup>
-                                <br><br>
-                                </label>
-                                <label for="nombre">Apellido
-                                <input type="text" name="apellido" required><sup> *</sup>
-                                <br><br>
-                                </label>
-                                <label for="nombre">Mail
-                                <input type="email" name="mail" required><sup> *</sup>
-                                <br><br>
-                                </label>
-                                <label for="nombre">Mensaje<sup> *</sup>
-                                <textarea name="mensaje" id="" cols="50" rows="14" placeholder="Tu mensaje..." required></textarea>
-                                <br><br>
-                                </label>
-                                <input class="contacto__formulario--terminos" type="checkbox" name="terminos" value="acepto" required>
-                                <span>Acepto los terminos y condiciones.</span><sup> *</sup>
-                                <br><br>
-                                <input class="contacto__formulario--boletin" type="checkbox" name="boletin" value="acepto" checked>
-                                <span>Deseo suscribirme al boletin de noticias semanal.</span>
-                                <br><br>
-                                <button type="submit">Enviar</button>
-                        </fieldset>
+                    <form>
+                        <div class="row">
+                            <label for="Nombre" class="col-sm-2 col-form-label">Nombre <sup>*</sup></label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label for="Apellido" class="col-sm-2 col-form-label">Apellido <sup>*</sup></label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label for="Mail" class="col-sm-2 col-form-label">Mail <sup>*</sup></label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label for="mensaje" class="col-sm-2 col-form-label">Mensaje <sup>*</sup></label>
+                            <div class="col-sm-10">
+                                <textarea name="mensaje" id="" cols="40" rows="20" required></textarea>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-10 mt-3">
+                                <input type="checkbox" name="" id=""><span class="mx-1">Deseo suscribirme al boletin de
+                                    noticias.</span>
+                                <br>
+                                <input type="checkbox" checked required> <span>Acepto los terminos y condiciones.
+                                    <sup>*</sup></span>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">ENVIAR</button>
                     </form>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="footerBar__contacto">
-            <a href="./index.html"><img src="/assets/img/GP.png" alt="" class="logo__footer"></a>
-            <span>Games Portal TM 2022 - Todos los derechos reservados.</span>
-            <a href=""><img src="/assets/img/instagram.png" alt="" class="social__ig"></a>
-            <a href=""><img src="/assets/img/twitter.png" alt="" class="social__tw"></a>
-            <a href=""><img src="/assets/img/facebook.png" alt="" class="social__fb"></a>
+    <footer class="bg-dark text-center text-white">
+        <div class="container p-4 pb-0">
+            <section class="mb-4">
+                <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+                <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+            </section>
+        </div>
+        <div class="text-center p-3 bg-dark">
+            Games Portal <sup>TM</sup> 2022 -
+            <span class="text-white">Todos los derechos reservados.</span>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

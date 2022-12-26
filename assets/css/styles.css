@@ -13,6 +13,7 @@
 .navFixed {
   position: fixed;
 }
+
 .navBar {
   background-color: #333333;
   height: 50px;
@@ -26,11 +27,11 @@
   display: flex;
 }
 
-.nav-item > a {
+.nav-item>a {
   color: #eeeeee !important;
 }
 
-.nav-item > a:hover {
+.nav-item>a:hover {
   color: #cc0000 !important;
 }
 
@@ -152,6 +153,7 @@
   0% {
     scale: 1;
   }
+
   100% {
     scale: 1.05;
   }
@@ -163,7 +165,7 @@
   animation-fill-mode: forwards;
 }
 
-.noticias__tarjeta--descripcion > a > h4 {
+.noticias__tarjeta--descripcion>a>h4 {
   font-size: 20px !important;
 }
 
@@ -313,10 +315,10 @@
   background-color: #eeeeee;
 }
 
-.oferta:hover{
-    animation-name: redimensionar;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
+.oferta:hover {
+  animation-name: redimensionar;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
 
 .oferta__descripcion {
@@ -410,22 +412,23 @@
   color: #cc0000;
 }
 
-.page-link{
-    color: #333333 !important;
-    background-color: #eeeeee !important;
-    border: none;
+.page-link {
+  color: #333333 !important;
+  background-color: #eeeeee !important;
+  border: none;
 }
 
-.pagina-activa{
-    color: #eeeeee !important;
-    background-color: #cc0000 !important;
-    border: none;
+.pagina-activa {
+  color: #eeeeee !important;
+  background-color: #cc0000 !important;
+  border: none;
 }
 
-.page-link:hover{
-    color: #eeeeee !important;
-    background-color: #cc0000 !important;
+.page-link:hover {
+  color: #eeeeee !important;
+  background-color: #cc0000 !important;
 }
+
 /* CSS: acerca.html  */
 
 .acercaDe {
@@ -448,11 +451,6 @@
   width: 300px;
 }
 
-.acercaDe__descripcion--imagen {
-  position: relative;
-  top: -370px;
-  left: 450px;
-}
 
 .acercaDe__desarrollador {
   display: flex;
@@ -464,6 +462,7 @@
   flex-direction: column;
   row-gap: 15px;
 }
+
 .acercaDe__desarrollador--imagen {
   border-radius: 50%;
   width: 128px;
@@ -488,7 +487,7 @@
 
 .contacto__formulario {
   margin-top: 20px;
-  width: 480px;
+  width: 600px;
 }
 
 .contacto__formulario form legend {
@@ -585,7 +584,7 @@
   cursor: pointer;
 }
 
-.foro__posteo > img {
+.foro__posteo>img {
   width: 80px;
   height: 80px;
   margin-top: -3px;
@@ -598,6 +597,10 @@
   margin-top: 20px;
   line-height: 15px;
   width: 300px;
+}
+
+.foro__posteo--info>h4 {
+  font-size: 15px;
 }
 
 .foro__posteo--mensajes {
