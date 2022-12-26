@@ -1,111 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="icon" type="image/x-icon" href="assets/img/GP.png">
-    <link href='https://fonts.googleapis.com/css?family=Bakbak One' rel='stylesheet'>
-    <title>Games Portal - Noticias, Videojuegos y mas...</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="icon" type="image/x-icon" href="assets/img/GP.png">
+  <link href='https://fonts.googleapis.com/css?family=Bakbak One' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Games Portal - Noticias, Videojuegos y mas...</title>
 </head>
+
 <body>
-    <nav class="navBar">
-        <a href="./index.html"><img src="/assets/img/GP.png" alt="" class="logo"></a>
-            <ul class="navBar__menu">
-                <li><a href="/index.html">INICIO</a></li>
-                <li><a href="/assets/pages/tienda.html">TIEND</a></li>
-                <li><a href="/assets/pages/comunidad.html">COMUNIDAD</a></li>
-                <li><a href="/assets/pages/contacto.html">CONTACTO</a></li>
-                <li><a href="/assets/pages/acerca.html">ACERCA DE</a></li>
-            </ul>
-    </nav>
-        <div class="lineaRoja"></div>
-    <main>
-                        <!-- Seccion: Destacados -->
-        <section class="destacados">
-            <div class="destacados__info">
-                <img src="./assets/img/star.png" alt="" class="destacados__titulo--icono">
-                <span class="destacados__titulo--texto">DESTACADOS</span>
-                <a href=""><img src="assets/img/RocketLeague-Noticia1.png" alt="" class="destacados__contenido--imagen"></a>
-                    <div class="destacados__contenido--descripcion">
-                        <a href=""><span class="destacados__contenido--titulo">ROCKET LEAGUE - RECOMPENSAS TEMPORADA 8</span></a>
-                        <p class="destacados__contenido--texto">Aunque la temporada 8 no dure eternamente, la ciudad nunca olvidará tu nombre. En honor a tus logros clasificatorios más recientes, ¡las recompensas de esta temporada serán...</p>
-                    </div>
-                    <div class="destacados__publicaciones">
-                        <div class="destacados__publicaciones--barras1"></div>
-                        <div class="destacados__publicaciones--barras2"></div>
-                        <div class="destacados__publicaciones--barras3"></div>
-                    </div>
-                    <div class="division">
-                        <hr class="divisor">
-                    </div>
+  <nav class="navbar navbar-expand-lg bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./assets/img/GP.png" alt="" class="logo"></a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./assets/pages/tienda.html">TIENDA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./assets/pages/comunidad.html">COMUNIDAD</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./assets/pages/contacto.html">CONTACTO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./assets/pages/acerca.html">ACERCA DE</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="lineaRoja"></div>
+  <main>
+    <!-- Seccion: Destacados -->
+    <section class="row col-xxl-6 col-xl-7 col-lg-8 col-md-9 col-sm-10 mx-auto mt-5">
+      <div class="destacados__info">
+        <i class="fa-solid fa-star destacados__titulo--icono mb-3"><span
+            class="destacados__titulo--texto mx-1">DESTACADOS</span></i>
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="6000">
+              <img src="./assets/img/RocketLeague-Noticia1.png" class="d-block w-100" alt="...">
             </div>
-        </section>
-                        <!-- Seccion: Noticias -->
-        <section class="noticias">
-            <div class="noticias__info">
-                <img src="./assets/img/newspaper.png" alt="" class="destacados__titulo--icono">
-                <span class="destacados__titulo--texto">NOTICIAS</span>
-                <div class="noticias__cards">
-                    <div class="noticias__tarjeta">
-                        <a href=""><img src="assets/img/SKYRIM.png" alt=""></a>
-                        <div class="noticias__tarjeta--descripcion">
-                            <a href=""><h4>Skyrim - STEAM</h4></a>
-                            <p>La leyenda de Skyrim, libre para todos. La empresa Bethesda celebra sus 20 años y ofrece su juego insignia a...</p>
-                        </div>
-                    </div>
-                    <div class="noticias__tarjeta">
-                        <a href=""><img src="assets/img/wartales.png" alt=""></a>
-                        <div class="noticias__tarjeta--descripcion">
-                           <a href=""><h4>Wartales - STEAM / EPIC GAMES</h4></a>
-                            <p>La nueva actualizacion ya se encuentra disponible. "Wartales: Justicars Oath" podra descargarse gratuitamente en ambas plataformas...</p>
-                        </div>
-                    </div>
-                    <div class="noticias__tarjeta">
-                        <a href=""><img src="assets/img/codmw2.png" alt=""></a>
-                        <div class="noticias__tarjeta--descripcion">
-                            <a href=""><h4>Call Of Duty: Modern Warfare 2 - BLIZZARD</h4></a>
-                            <p>El nuevo modo "DMZ" llega como una propuesta renovadora a la saga de COD. Con una jugabilidad similar a "Escape From Tarkov", esta edicion... </p>
-                        </div>
-                    </div>
-                    <div class="noticias__tarjeta">
-                        <a href=""><img src="assets/img/paragon.png" alt=""></a>
-                        <div class="noticias__tarjeta--descripcion">
-                            <a href=""><h4>Paragon: Overprime - STEAM</h4></a>
-                            <p>Luego de varios periodos de playtest, finalmente fue anunciada la fecha de lanzamiento del "Early Access" de Paragon: Overprime. </p>
-                        </div>
-                    </div>
-                    <div class="noticias__soloTexto">
-                        <a href=""><h4>PlateUp - Coop Online</h4> <p>El juego de Yogscats Studios que es furor en todas las plataformas.</p></a>
-                        <a href=""><h4>FM 2022 - Xbox Game Pass</h4> <p>Los fanaticos del futbol ya pueden disfrutar del nuevo Football Manager en el XBOX Game Pass.</p></a>
-                        <a href=""><h4>Hand Of Fate 3 - Steam</h4> <p>Revivimos el trailer de esta nueva edicion de la saga.</p></a>
-                        <a href=""><h4>Pummel Party - Steam</h4> <p>Cuando el caos es la premisa, ten presente esta review.</p></a>
-                    </div>
-                </div>
+            <div class="carousel-item" data-bs-interval="6000">
+              <img src="./assets/img/FallGuys-Noticia2.png" class="d-block w-100" alt="...">
             </div>
-        </section>
-        <div class="division">
-            <hr class="divisor">
+            <div class="carousel-item" data-bs-interval="6000">
+              <img src="./assets/img/RFTA-Noticias3.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
         </div>
-                        <!-- Seccion: Reviews -->
-        <section class="multimedia">
-            <div class="video">
-                <img src="./assets/img/VIDEO.PNG" alt="" class="destacados__titulo--icono">
-                <span class="destacados__titulo--texto">REVIEW</span>
-                <iframe width="512" height="512" src="https://www.youtube.com/embed/VYcjCaWyI7g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+    <!-- Seccion: Noticias -->
+    <section class="destacados">
+      <div class="row col-6 mt-4">
+        <i class="fa-regular fa-newspaper destacados__titulo--icono mt-3"><span
+            class="destacados__titulo--texto mx-2">NOTICIAS</span></i>
+        <div class="noticias__cards">
+          <div class="noticias__tarjeta">
+            <a href=""><img src="assets/img/SKYRIM.png" alt=""></a>
+            <div class="noticias__tarjeta--descripcion">
+              <a href="">
+                <h4>Skyrim - STEAM</h4>
+              </a>
+              <p>La leyenda de Skyrim, libre para todos. La empresa Bethesda celebra sus 20 años y ofrece su juego
+                insignia a...</p>
             </div>
-        </section>
-    </main>
-                        <!-- Footer -->
-    <footer>
-        <div class="footerBar">
-            <a href="./index.html"><img src="/assets/img/GP.png" alt="" class="logo__footer"></a>
-            <span>Games Portal TM 2022 - Todos los derechos reservados.</span>
-            <a href=""><img src="./assets/img/instagram.png" alt="" class="social__ig"></a>
-            <a href=""><img src="./assets/img/twitter.png" alt="" class="social__tw"></a>
-            <a href=""><img src="./assets/img/facebook.png" alt="" class="social__fb"></a>
+          </div>
+          <div class="noticias__tarjeta">
+            <a href=""><img src="assets/img/wartales.png" alt=""></a>
+            <div class="noticias__tarjeta--descripcion">
+              <a href="">
+                <h4>Wartales - STEAM / EPIC GAMES</h4>
+              </a>
+              <p>La nueva actualizacion ya se encuentra disponible. "Wartales: Justicars Oath" podra descargarse
+                gratuitamente en ambas plataformas...</p>
+            </div>
+          </div>
+          <div class="noticias__tarjeta">
+            <a href=""><img src="assets/img/codmw2.png" alt=""></a>
+            <div class="noticias__tarjeta--descripcion">
+              <a href="">
+                <h4>COD: Modern Warfare 2 - BLIZZARD</h4>
+              </a>
+              <p>El nuevo modo "DMZ" llega como una propuesta renovadora a la saga de COD. Con una jugabilidad similar a
+                "Escape From Tarkov", esta edicion... </p>
+            </div>
+          </div>
+          <div class="noticias__tarjeta">
+            <a href=""><img src="assets/img/paragon.png" alt=""></a>
+            <div class="noticias__tarjeta--descripcion">
+              <a href="">
+                <h4>Paragon: Overprime - STEAM</h4>
+              </a>
+              <p>Luego de varios periodos de playtest, finalmente fue anunciada la fecha de lanzamiento del "Early
+                Access" de Paragon: Overprime. </p>
+            </div>
+          </div>
+          <div class="noticias__soloTexto">
+            <div class="noticias__soloTexto--info">
+              <a href="">
+                <h4>PlateUp - Coop Online</h4>
+                <p>El juego de Yogscats Studios que es furor en todas las plataformas.</p>
+              </a>
+            </div>
+            <div class="noticias__soloTexto--info">
+              <a href="">
+                <h4>FM 2022 - Xbox Game Pass</h4>
+                <p>Los fanaticos del futbol ya pueden disfrutar del nuevo Football Manager en el XBOX Game Pass.</p>
+              </a>
+            </div>
+            <div class="noticias__soloTexto--info">
+              <a href="">
+                <h4>Hand Of Fate 3 - Steam</h4>
+                <p>Revivimos el trailer de esta nueva edicion de la saga.</p>
+              </a>
+            </div>
+            <div class="noticias__soloTexto--info">
+              <a href="">
+                <h4>Pummel Party - Steam</h4>
+                <p>Cuando el caos es la premisa, ten presente esta review.</p>
+              </a>
+            </div>
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
+    <div class="division">
+      <hr class="divisor">
+    </div>
+    <!-- Seccion: Reviews -->
+    <section class="multimedia">
+      <div class="video mb-4">
+        <i class="fa-brands fa-youtube destacados__titulo--icono"><span
+            class="destacados__titulo--texto mx-2">REVIEW</span></i>
+        <iframe width="512" height="512" src="https://www.youtube.com/embed/VYcjCaWyI7g" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-dark text-center text-white">
+    <div class="container p-4 pb-0">
+      <section class="mb-4">
+        <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button"><i
+            class="fab fa-facebook-f"></i></a>
+        <a class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="#!" role="button"><i
+            class="fab fa-twitter"></i></a>
+        <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button"><i
+            class="fab fa-instagram"></i></a>
+      </section>
+    </div>
+    <div class="text-center p-3 bg-dark">
+      Games Portal <sup>TM</sup> 2022 -
+      <span class="text-white">Todos los derechos reservados.</span>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

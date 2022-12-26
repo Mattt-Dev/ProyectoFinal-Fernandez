@@ -7,58 +7,79 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" type="image/x-icon" href="../img/GP.png">
     <link href='https://fonts.googleapis.com/css?family=Bakbak One' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Games Portal - Tienda</title>
 </head>
 <body>
-    <nav class="navBar">
-        <a href="/index.html"><img src="/assets/img/GP.png" alt="" class="logo"></a>
-            <ul class="navBar__menu">
-                <li><a href="/index.html">INICIO</a></li>
-                <li><a href="/assets/pages/tienda.html">TIENDA</a></li>
-                <li><a href="/assets/pages/comunidad.html">COMUNIDAD</a></li>
-                <li><a href="/assets/pages/contacto.html">CONTACTO</a></li>
-                <li><a href="/assets/pages/acerca.html">ACERCA DE</a></li>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="../img/GP.png" alt="" class="logo"></a>
+          <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./tienda.html">TIENDA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./comunidad.html">COMUNIDAD</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">CONTACTO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./acerca.html">ACERCA DE</a>
+              </li>
             </ul>
-    </nav>
+          </div>
+        </div>
+      </nav>
         <div class="lineaRoja"></div>
     <main>
         <!-- Ofertas -->
         <section class="ofertas">
-            <div class="ofertas__info">
-                <img src="/assets/img/discount.png" alt="" class="destacados__titulo--icono">
-                <span class="destacados__titulo--texto">OFERTAS</span>
-                <div class="ofertas__fondo">
+            <div class="ofertas__info row col-6 mt-4">
+                <i class="fa-solid fa-percent destacados__titulo--icono"><span class="destacados__titulo--texto mx-2">OFERTAS</span></i>
+                <div class="ofertas__fondo mt-3">
                     <div class="oferta">
                         <a href=""><img src="/assets/img/squareenix.png" alt=""></a>
                         <div class="oferta__descripcion">
-                            <img src="/assets/img/discount.png" alt="" class="oferta__descripcion--icono">
+                            <i class="fa-solid fa-percent destacados__titulo--icono mx-2 mt-1"></i>
                             <a href=""><p>HASTA 80% OFF</p></a>
                         </div>
                     </div>
                     <div class="oferta">
                         <a href=""><img src="/assets/img/bethesda.png" alt=""></a>
                         <div class="oferta__descripcion">
-                            <img src="/assets/img/discount.png" alt="" class="oferta__descripcion--icono">
-                            <a href=""><p>HASTA 65% OFF</p></a>
+                            <i class="fa-solid fa-percent destacados__titulo--icono mx-2 mt-1"></i>
+                            <a><p>HASTA 65% OFF</p></a>
                         </div>
                     </div>
                     <div class="oferta">
                         <a href=""><img src="/assets/img/activision.png" alt=""></a>
                         <div class="oferta__descripcion">
-                            <img src="/assets/img/discount.png" alt="" class="oferta__descripcion--icono">
+                            <i class="fa-solid fa-percent destacados__titulo--icono mx-2 mt-1"></i>
                             <a href=""><p>HASTA 90% OFF</p></a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
         <!-- Titulos -->
         <section class="titulos">
             <div class="titulos__info">
-                <img src="/assets/img/titulos.png" alt="" class="destacados__titulo--icono">
-                <span class="destacados__titulo--texto">TITULOS</span>
-                <div class="titulos__info--filtro">
+                <i class="fa-solid fa-gamepad destacados__titulo--icono"><span class="destacados__titulo--texto mx-2">TITULOS</span></i>
+                <div class="row col-12 mx-auto mt-3">
                     <p>FILTROS</p>
                     <ul>
                         <input type="checkbox"> Accion
@@ -109,26 +130,36 @@
                         </div>                        
                     </div>
                 </div>
-                <div class="titulos__paginas">
-                    <ul>
-                        <a href=""><li>1</li></a>
-                        <a href=""><li>2</li></a>
-                        <a href=""><li>3</li></a>
-                        <a href=""><li>4</li></a>
-                        <a href=""><li>5</li></a>
+                <nav aria-label="..." class="paginador">
+                    <ul class="pagination m-5 justify-content-center">
+                      <li class="page-item active"><a class="page-link pagina-activa" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">4</a></li>
+                      <li class="page-item"><a class="page-link" href="#">5</a></li>
                     </ul>
-                </div>
+                </nav>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="footerBar">
-            <a href="./index.html"><img src="/assets/img/GP.png" alt="" class="logo__footer"></a>
-            <span>Games Portal TM 2022 - Todos los derechos reservados.</span>
-            <a href=""><img src="/assets/img/instagram.png" alt="" class="social__ig"></a>
-            <a href=""><img src="/assets/img/twitter.png" alt="" class="social__tw"></a>
-            <a href=""><img src="/assets/img/facebook.png" alt="" class="social__fb"></a>
+    <footer class="bg-dark text-center text-white">
+        <div class="container p-4 pb-0">
+          <section class="mb-4">
+            <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button"><i
+                class="fab fa-facebook-f"></i></a>
+            <a class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="#!" role="button"><i
+                class="fab fa-twitter"></i></a>
+            <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button"><i
+                class="fab fa-instagram"></i></a>
+          </section>
         </div>
-    </footer>
+        <div class="text-center p-3 bg-dark">
+          Games Portal <sup>TM</sup> 2022 -
+          <span class="text-white">Todos los derechos reservados.</span>
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </body>
 </html>
