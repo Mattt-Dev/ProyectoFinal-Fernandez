@@ -263,7 +263,7 @@
 .video {
   width: 900px;
   margin-top: 15px;
-  
+
 }
 
 .video iframe {
@@ -330,48 +330,14 @@
   margin-top: 40px;
 }
 
-.ofertas__fondo {
-  background-color: #cc0000;
-  width: 900px;
-  height: auto;
-  margin-top: 15px;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
 .oferta {
-  margin: 60px auto;
-  width: 230px;
-  background-color: #eeeeee;
+  margin-left: 65px;
 }
 
 .oferta:hover {
   animation-name: redimensionar;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
-}
-
-.oferta__descripcion {
-  background-color: #333333;
-  height: 50px;
-  margin-top: -6px;
-  display: flex;
-  justify-content: right;
-  padding: 10px;
-  color: #eeeeee;
-}
-
-.oferta__descripcion--icono {
-  position: relative;
-  left: -10px;
-  top: -2px;
-}
-
-.oferta__descripcion a,
-.oferta__descripcion a:visited {
-  color: #eeeeee;
-  text-decoration: none;
 }
 
 .titulos {
@@ -401,11 +367,6 @@
   flex-wrap: wrap;
 }
 
-.titulos__juegos--tarjeta {
-  margin-top: 45px;
-  width: 230px;
-  height: 320px;
-}
 
 .titulos__juegos--boton {
   max-width: 100px;
@@ -644,4 +605,8 @@
   position: relative;
   left: 60px;
   top: 27px;
+}
+
+#d1 {
+  border: 1px solid red;
 }
