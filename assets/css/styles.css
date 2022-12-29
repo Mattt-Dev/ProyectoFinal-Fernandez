@@ -145,7 +145,6 @@
 }
 
 .division {
-  margin-top: 40px;
   display: flex;
   justify-content: center;
 }
@@ -264,6 +263,7 @@
 .video {
   width: 900px;
   margin-top: 15px;
+  
 }
 
 .video iframe {
