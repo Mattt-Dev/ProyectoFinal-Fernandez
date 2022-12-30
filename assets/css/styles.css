@@ -36,24 +36,6 @@
   }
 }
 
-
-.navFixed {
-  position: fixed;
-}
-
-.navBar {
-  background-color: #333333;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  position: sticky;
-  top: 0;
-}
-
-.navBar__menu {
-  display: flex;
-}
-
 .nav-item>a {
   color: #eeeeee !important;
 }
@@ -68,11 +50,6 @@
   top: 50px;
 }
 
-.destacados {
-  display: flex;
-  justify-content: center;
-}
-
 .destacados__info {
   width: 900px;
   margin-top: 40px;
@@ -80,6 +57,12 @@
 
 .carousel-inner {
   cursor: pointer;
+}
+
+.divisor {
+  width: 300px;
+  height: 5px;
+  background-color: #333333;
 }
 
 .destacados__titulo--icono {
@@ -91,78 +74,6 @@
   font-weight: bold;
   font-size: 20px;
   color: #333333;
-}
-
-.destacados__contenido--imagen {
-  margin-top: 10px;
-  max-width: 900px;
-}
-
-.destacados__contenido--descripcion {
-  background-color: black;
-  margin-top: -6px;
-}
-
-.destacados__contenido--descripcion a,
-.destacados__contenido--descripcion a:visited {
-  text-decoration: none;
-  color: #eeeeee;
-}
-
-.destacados__contenido--titulo {
-  display: flex;
-  justify-content: left;
-  flex-wrap: wrap;
-  color: #eeeeee;
-  font-weight: bold;
-  padding: 10px;
-  font-size: 18px;
-}
-
-.destacados__contenido--texto {
-  color: #eeeeee;
-  padding: 10px;
-  font-size: 16px;
-}
-
-.destacados__publicaciones {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 20px;
-}
-
-.destacados__publicaciones--barras1 {
-  width: 100px;
-  height: 5px;
-  background-color: #cc0000;
-}
-
-.destacados__publicaciones--barras2,
-.destacados__publicaciones--barras3 {
-  width: 100px;
-  height: 5px;
-  background-color: #333333;
-}
-
-.division {
-  display: flex;
-  justify-content: center;
-}
-
-.divisor {
-  width: 300px;
-  height: 5px;
-  background-color: #333333;
-}
-
-.noticias {
-  display: flex;
-  justify-content: center;
-}
-
-.noticias__info {
-  width: 900px;
-  margin-top: 15px;
 }
 
 .noticias__cards {
@@ -255,83 +166,10 @@
   animation-fill-mode: forwards;
 }
 
-.multimedia {
-  display: flex;
-  justify-content: center;
-}
-
-.video {
-  width: 900px;
-  margin-top: 15px;
-
-}
-
-.video iframe {
-  margin-top: 20px;
-  width: 100%;
-}
-
-.footerBar {
-  margin-top: 40px;
-  background-color: #333333;
-  width: 100%;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-}
-
-.footerBar span {
-  margin-top: 30px;
-  color: #eeeeee;
-  font-weight: bold;
-}
-
-.logo__footer {
-  max-width: 64px;
-  position: relative;
-  top: 20px;
-  left: -120px;
-}
-
-.social__ig {
-  max-width: 32px;
-  max-height: 32px;
-  position: relative;
-  top: 25px;
-  left: 120px;
-}
-
-.social__tw {
-  max-width: 32px;
-  max-height: 32px;
-  position: relative;
-  top: 25px;
-  left: 150px;
-}
-
-.social__fb {
-  max-width: 32px;
-  max-height: 32px;
-  position: relative;
-  top: 25px;
-  left: 180px;
-}
-
 /* CSS: tienda.html  */
 
-.ofertas {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
-.ofertas__info {
-  width: 900px;
-  margin-top: 40px;
-}
-
 .oferta {
-  margin-left: 65px;
+  margin-left: 15px;
 }
 
 .oferta:hover {
@@ -339,34 +177,6 @@
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
 }
-
-.titulos {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
-.titulos__info {
-  margin-top: 45px;
-  width: 900px;
-}
-
-.titulos__info--filtro {
-  margin-top: 35px;
-  max-width: 150px;
-}
-
-.titulos__info--filtro ul {
-  margin-top: 10px;
-  column-gap: 5px;
-}
-
-.titulos__juegos {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
 
 .titulos__juegos--boton {
   max-width: 100px;
@@ -381,27 +191,6 @@
   position: relative;
   top: 8px;
   left: 30px;
-}
-
-.titulos__paginas ul {
-  display: flex;
-  column-gap: 10px;
-  justify-content: center;
-  margin-top: 55px;
-  font-size: 20px;
-}
-
-.titulos__paginas ul li,
-.titulos__paginas a,
-.titulos__paginas a:visited {
-  list-style-type: none;
-  display: inline;
-  text-decoration: none;
-  color: #333333;
-}
-
-.titulos__paginas ul li:hover {
-  color: #cc0000;
 }
 
 .page-link {
@@ -423,17 +212,7 @@
 
 /* CSS: acerca.html  */
 
-.acercaDe {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
 
-.acercaDe__descripcion {
-  margin-top: 45px;
-  width: 900px;
-  max-height: 520px;
-}
 
 .acercaDe__descripcion--titulo {
   font-size: 45px;
@@ -442,7 +221,6 @@
 .acercaDe__descripcion--info {
   width: 300px;
 }
-
 
 .acercaDe__desarrollador {
   display: flex;
@@ -462,24 +240,13 @@
 
 /* CSS: contacto.html */
 
-.contacto {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
 .contactos__titulo {
   width: 900px;
   margin-top: 40px;
 }
 
-.contactos__titulo h1 {
-  display: inline;
-}
-
 .contacto__formulario {
   margin-top: 20px;
-  width: 600px;
 }
 
 .contacto__formulario form label {
@@ -488,7 +255,7 @@
   margin-bottom: 20px;
 }
 
-.contacto__formulario > form > div > input{
+.contacto__formulario>form>div>input {
   margin-left: 25px;
 }
 
@@ -497,62 +264,16 @@
 }
 
 .contacto__formulario button {
-  margin: 20px;
+  margin: 21px;
   padding: 5px;
   font-size: 15px;
   cursor: pointer;
 }
 
-.contacto__formulario--terminos {
-  margin-left: 30px;
-}
-
-.footerBar__contacto {
-  margin-top: 40px;
-  background-color: #333333;
-  width: 100%;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  bottom: 0;
-}
-
-.footerBar__contacto span {
-  margin-top: 30px;
-  color: #eeeeee;
-  font-weight: bold;
-}
-
-.contacto__formulario--boletin {
-  margin-left: 30px;
-}
-
-.comunidad {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
+/* CSS: Comunidad.html */
 
 .foro__titulo {
   margin-top: 35px;
-}
-
-.foro__titulo a,
-.foro__titulo a:visited {
-  color: black;
-  text-decoration: none;
-}
-
-.foro__titulo fieldset {
-  width: 500px;
-  margin-top: 20px;
-  border-radius: 10px 10px 5px 5px;
-  padding-bottom: 20px;
-}
-
-.foro__titulo--imagen {
-  width: 22px;
 }
 
 .foro__titulo legend {
@@ -562,7 +283,7 @@
 .foro__posteo {
   display: flex;
   border: 2px solid black;
-  max-width: 500px;
+  width: 450px;
 }
 
 .foro__posteo:hover {
@@ -586,23 +307,4 @@
 
 .foro__posteo--info>h4 {
   font-size: 18px;
-}
-
-.foro__posteo--mensajes {
-  position: relative;
-  left: 50px;
-  top: 25px;
-}
-
-.foro__posteo--mensajesCantidad {
-  position: relative;
-  left: 55px;
-  top: 25px;
-}
-
-#d1 {
-  border: 1px solid red;
-}
-#d2 {
-  border: 1px solid red;
 }
