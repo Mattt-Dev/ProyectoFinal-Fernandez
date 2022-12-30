@@ -482,22 +482,18 @@
   width: 600px;
 }
 
-.contacto__formulario form legend {
-  margin: 15px;
+.contacto__formulario form label {
+  padding: 5px;
+  margin: 5px;
+  margin-bottom: 20px;
 }
 
-.contacto__formulario form label {
-  margin: 15px;
-  padding: 10px;
+.contacto__formulario > form > div > input{
+  margin-left: 25px;
 }
 
 .contacto__formulario sup {
   color: #cc0000;
-}
-
-.contacto__formulario form fieldset textarea {
-  margin-left: 20px;
-  padding: 10px;
 }
 
 .contacto__formulario button {
@@ -565,10 +561,8 @@
 
 .foro__posteo {
   display: flex;
-  margin: 20px;
-  width: 500px;
-  height: 80px;
   border: 2px solid black;
+  max-width: 500px;
 }
 
 .foro__posteo:hover {
@@ -586,27 +580,29 @@
 }
 
 .foro__posteo--info {
-  margin-top: 20px;
+  padding: 10px;
   line-height: 15px;
-  width: 300px;
 }
 
 .foro__posteo--info>h4 {
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .foro__posteo--mensajes {
   position: relative;
   left: 50px;
-  top: 30px;
+  top: 25px;
 }
 
 .foro__posteo--mensajesCantidad {
   position: relative;
-  left: 60px;
-  top: 27px;
+  left: 55px;
+  top: 25px;
 }
 
 #d1 {
+  border: 1px solid red;
+}
+#d2 {
   border: 1px solid red;
 }
