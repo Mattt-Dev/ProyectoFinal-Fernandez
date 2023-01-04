@@ -1,0 +1,48 @@
+.noticias__cards {
+    width: 900px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 130px;
+    .noticias__tarjeta {
+        margin-top: 25px;
+        width: 400px;
+        height: 225px;
+        &:hover {
+            animation-name: redimensionar;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+          }
+          .noticias__tarjeta--descripcion {
+            background-color: black;
+            margin-top: -6px;
+            color: #eeeeee;
+            padding: 10px;
+            > a {
+                color: white;
+                text-decoration: none;
+                > h4 {
+                    font-size: 20px;
+                    &:hover{
+                        border-bottom: 2px solid #eeeeee;
+                        display: inline;
+                    }
+                }
+            }
+            > p {
+                margin-top: 10px;
+
+            }
+          }
+      }
+  }
+  
+  @keyframes redimensionar {
+    0% {
+      scale: 1;
+    }
+  
+    100% {
+      scale: 1.05;
+    }
+  }

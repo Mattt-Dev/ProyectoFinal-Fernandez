@@ -1,0 +1,24 @@
+    // sCss General
+  @import "reset";
+  @import "logo";
+  @import "navegador";
+
+    // sCss Index.html
+  @import "destacados";
+  @import "divisor";
+  @import "noticias";
+  @import "soloTexto";
+
+    // sCss Tienda.html
+  @import "oferta";
+  @import "juegosBoton";
+  @import "paginador";
+  
+    // sCss Comunidad.html
+  @import "foro";
+    
+    // sCss Contacto.html
+  @import "formulario";
+
+    // sCss AcercaDe.html
+  @import "acerca";

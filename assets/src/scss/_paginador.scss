@@ -1,0 +1,16 @@
+.page-link {
+    color: #333333;
+    background-color: #eeeeee;
+    border: none;
+    &:hover {
+        color: #eeeeee;
+        background-color: #cc0000;
+      }
+  }
+  
+  .pagina-activa {
+    color: #eeeeee;
+    background-color: #cc0000 !important;
+    border: none;
+  }
+  

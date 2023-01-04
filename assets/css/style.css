@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bakbak One"; }
+
+.logo {
+  width: 64px;
+  padding: 10px;
+  animation-name: giro-logo;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1; }
+
+@keyframes giro-logo {
+  0% {
+    transform: rotate(0deg); }
+  25% {
+    transform: rotate(90deg); }
+  50% {
+    transform: rotate(180deg); }
+  75% {
+    transform: rotate(270deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+.nav-item > a {
+  color: #eeeeee; }
+  .nav-item > a:hover {
+    color: #cc0000; }
+
+.lineaRoja {
+  height: 7px;
+  background-color: #cc0000;
+  top: 50px; }
+
+.destacados__titulo--icono {
+  max-width: 24px;
+  color: #cc0000; }
+  .destacados__titulo--icono .destacados__titulo--texto {
+    font-weight: bold;
+    font-size: 20px;
+    color: #333333; }
+
+.carousel-inner {
+  cursor: pointer; }
+
+.divisor {
+  width: 300px;
+  height: 5px;
+  background-color: #333333; }
+
+.noticias__cards {
+  width: 900px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 130px; }
+  .noticias__cards .noticias__tarjeta {
+    margin-top: 25px;
+    width: 400px;
+    height: 225px; }
+    .noticias__cards .noticias__tarjeta:hover {
+      animation-name: redimensionar;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards; }
+    .noticias__cards .noticias__tarjeta .noticias__tarjeta--descripcion {
+      background-color: black;
+      margin-top: -6px;
+      color: #eeeeee;
+      padding: 10px; }
+      .noticias__cards .noticias__tarjeta .noticias__tarjeta--descripcion > a {
+        color: white;
+        text-decoration: none; }
+        .noticias__cards .noticias__tarjeta .noticias__tarjeta--descripcion > a > h4 {
+          font-size: 20px; }
+          .noticias__cards .noticias__tarjeta .noticias__tarjeta--descripcion > a > h4:hover {
+            border-bottom: 2px solid #eeeeee;
+            display: inline; }
+      .noticias__cards .noticias__tarjeta .noticias__tarjeta--descripcion > p {
+        margin-top: 10px; }
+
+@keyframes redimensionar {
+  0% {
+    scale: 1; }
+  100% {
+    scale: 1.05; } }
+
+@media (max-width: 860px) {
+  .noticias__soloTexto {
+    flex-direction: column !important; } }
+
+.noticias__soloTexto {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  flex-direction: row;
+  column-gap: 20px;
+  max-width: 900px; }
+  .noticias__soloTexto .noticias__soloTexto--info {
+    border: 0.5px solid #ececec;
+    border-radius: 5px;
+    width: 300px;
+    margin: 10px;
+    padding: 10px; }
+    .noticias__soloTexto .noticias__soloTexto--info:hover {
+      box-shadow: 5px 5px 5px #cc0000;
+      animation-name: redimensionar;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards; }
+    .noticias__soloTexto .noticias__soloTexto--info > a {
+      text-decoration: none;
+      color: #333333; }
+    .noticias__soloTexto .noticias__soloTexto--info h4 {
+      font-size: 20px; }
+
+.oferta__container {
+  width: 900px;
+  border: 1px solid red;
+  padding: 5px; }
+
+.oferta {
+  margin-left: 15px; }
+  .oferta:hover {
+    animation-name: redimensionar;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards; }
+
+.titulos__juegos--boton {
+  max-width: 100px;
+  height: 50px;
+  position: relative;
+  left: 130px;
+  background-color: #cc0000; }
+  .titulos__juegos--boton img {
+    max-width: 36px;
+    position: relative;
+    top: 8px;
+    left: 30px; }
+
+.page-link {
+  color: #333333;
+  background-color: #eeeeee;
+  border: none; }
+  .page-link:hover {
+    color: #eeeeee;
+    background-color: #cc0000; }
+
+.pagina-activa {
+  color: #eeeeee;
+  background-color: #cc0000 !important;
+  border: none; }
+
+.foro__titulo {
+  margin-top: 35px; }
+  .foro__titulo legend {
+    margin-left: 20px; }
+
+.foro__posteo {
+  display: flex;
+  border: 2px solid black;
+  width: 450px; }
+  .foro__posteo img {
+    width: 80px;
+    height: 80px;
+    margin-top: -3px;
+    padding: 10px;
+    border-radius: 50%;
+    object-fit: cover; }
+  .foro__posteo:hover {
+    border-color: #cc0000;
+    cursor: pointer; }
+  .foro__posteo .foro__posteo--info {
+    padding: 10px;
+    line-height: 15px; }
+    .foro__posteo .foro__posteo--info h4 {
+      font-size: 18px; }
+
+.contactos__titulo {
+  width: 900px;
+  margin-top: 40px; }
+
+.contacto__formulario {
+  margin-top: 20px; }
+  .contacto__formulario label {
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 20px; }
+  .contacto__formulario sup {
+    color: #cc0000; }
+  .contacto__formulario input {
+    margin-left: 25px;
+    padding: 2px; }
+  .contacto__formulario button {
+    margin: 21px;
+    padding: 5px;
+    font-size: 15px;
+    cursor: pointer; }
+
+.acercaDe__descripcion--titulo {
+  font-size: 45px; }
+
+.acercaDe__descripcion--info {
+  width: 300px; }
+
+.acercaDe__desarrollador--info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px; }
+  .acercaDe__desarrollador--info img {
+    border-radius: 50%;
+    width: 128px; }

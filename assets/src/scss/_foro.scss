@@ -1,0 +1,34 @@
+.foro__titulo {
+    margin-top: 35px;
+    legend {
+        margin-left: 20px;
+      }
+  }
+  
+  .foro__posteo {
+    display: flex;
+    border: 2px solid black;
+    width: 450px;
+    img {
+        width: 80px;
+        height: 80px;
+        margin-top: -3px;
+        padding: 10px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    &:hover {
+        border-color: #cc0000;
+        cursor: pointer;
+      }
+      .foro__posteo--info {
+        padding: 10px;
+        line-height: 15px;
+        h4{
+            font-size: 18px;
+          }
+      }
+  }
+  
+  
+  

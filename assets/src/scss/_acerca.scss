@@ -1,0 +1,17 @@
+.acercaDe__descripcion--titulo {
+    font-size: 45px;
+  }
+  
+  .acercaDe__descripcion--info {
+    width: 300px;
+  }
+  
+  .acercaDe__desarrollador--info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    img{
+        border-radius: 50%;
+        width: 128px;
+    }
+  }
