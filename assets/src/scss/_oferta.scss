@@ -1,14 +1,13 @@
-.oferta__container{
-    width: 900px;
-    border: 1px solid red;
-    padding: 5px;
+.card{
+    border: none;
 }
 
 .oferta {
-    margin-left: 15px;
+    margin-left: 5px;
     &:hover {
         animation-name: redimensionar;
         animation-duration: 0.5s;
         animation-fill-mode: forwards;
+        cursor: $cursor;
       }
   }

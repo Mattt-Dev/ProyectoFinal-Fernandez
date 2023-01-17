@@ -1,12 +1,12 @@
 .nav-item > a {
-    color: #eeeeee;
+    color: $blanco;
     &:hover {
-        color: #cc0000 ;
+        color: $rojo ;
       }
   }
   
   .lineaRoja {
     height: 7px;
-    background-color: #cc0000;
+    background-color: $rojo;
     top: 50px;
   }

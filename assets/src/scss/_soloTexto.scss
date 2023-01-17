@@ -5,8 +5,7 @@
 }     
 
 .noticias__soloTexto {
-  display: flex;
-  justify-content: space-evenly;
+  @include flex-evenly;
   padding: 20px;
   flex-direction: row;
   column-gap: 20px;
@@ -20,7 +19,7 @@
     padding: 10px;
 
     &:hover {
-      box-shadow: 5px 5px 5px #cc0000;
+      box-shadow: 5px 5px 5px $rojo;
       animation-name: redimensionar;
       animation-duration: 0.5s;
       animation-fill-mode: forwards;
@@ -28,13 +27,11 @@
 
     >a {
       text-decoration: none;
-      color: #333333;
+      color: $gris;
     }
 
     h4 {
       font-size: 20px;
     }
   }
- 
-
 }

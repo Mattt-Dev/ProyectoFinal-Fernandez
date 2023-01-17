@@ -1,7 +1,7 @@
 {
   "name": "preentrega2---fernandez",
   "version": "1.0.0",
-  "description": "Proyecto Final - Desarrollo Web",
+  "description": "Proyecto Final - Curso de Desarrollo Web de CoderHouse",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

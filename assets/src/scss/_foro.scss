@@ -7,7 +7,7 @@
   
   .foro__posteo {
     display: flex;
-    border: 2px solid black;
+    border: 2px solid $gris;
     width: 450px;
     img {
         width: 80px;
@@ -18,8 +18,8 @@
         object-fit: cover;
       }
     &:hover {
-        border-color: #cc0000;
-        cursor: pointer;
+        border-color: $rojo;
+        cursor: $cursor;
       }
       .foro__posteo--info {
         padding: 10px;

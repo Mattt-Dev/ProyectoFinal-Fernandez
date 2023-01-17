@@ -1,7 +1,6 @@
 .noticias__cards {
     width: 900px;
-    display: flex;
-    justify-content: space-evenly;
+    @include flex-evenly;
     flex-wrap: wrap;
     row-gap: 130px;
     .noticias__tarjeta {
@@ -16,7 +15,7 @@
           .noticias__tarjeta--descripcion {
             background-color: black;
             margin-top: -6px;
-            color: #eeeeee;
+            color: $blanco;
             padding: 10px;
             > a {
                 color: white;
@@ -24,7 +23,7 @@
                 > h4 {
                     font-size: 20px;
                     &:hover{
-                        border-bottom: 2px solid #eeeeee;
+                        border-bottom: 2px solid $blanco;
                         display: inline;
                     }
                 }

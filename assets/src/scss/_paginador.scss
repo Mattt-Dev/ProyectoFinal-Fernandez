@@ -1,16 +1,16 @@
 .page-link {
-    color: #333333;
-    background-color: #eeeeee;
+    color: $gris;
+    background-color: $blanco;
     border: none;
     &:hover {
-        color: #eeeeee;
-        background-color: #cc0000;
+        color: $blanco;
+        background-color: $rojo;
       }
   }
   
   .pagina-activa {
-    color: #eeeeee;
-    background-color: #cc0000 !important;
+    color: $blanco;
+    background-color: $rojo !important;
     border: none;
   }
   

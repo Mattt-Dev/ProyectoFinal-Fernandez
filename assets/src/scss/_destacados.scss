@@ -1,13 +1,13 @@
 .destacados__titulo--icono {
     max-width: 24px;
-    color: #cc0000;
+    color: $rojo;
     .destacados__titulo--texto {
         font-weight: bold;
         font-size: 20px;
-        color: #333333;
+        color: $gris;
     }
 }
 
 .carousel-inner {
-    cursor: pointer;
+    cursor: $cursor;
 }
