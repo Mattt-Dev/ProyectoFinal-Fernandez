@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Games Portal es un portal de videojuegos, con novedades y noticias de todo el mundo gamer.">
+    <meta name="description" content="Dejanos tus sugerencias y ayudanos a mejorar | Games Portal">
     <link rel="icon" type="image/x-icon" href="/assets/img/GP.ico">
     <link href='https://fonts.googleapis.com/css?family=Bakbak One' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -13,14 +13,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
       integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <link rel="stylesheet" href="/assets/css/style.css">
-    <title>Games Portal - Acerca De</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Games Portal - Contacto</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="../img/GP.png" alt="Logo de GamesPortal" class="logo"></a>
+            <a class="navbar-brand" href="#"><img src="../assets/img/GP.png" alt="Logo de GamesPortal" class="logo"></a>
             <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -29,19 +29,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="/index.html">INICIO</a>
+                        <a class="nav-link" href="../index.html">INICIO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../pages/tienda.html">TIENDA</a>
+                        <a class="nav-link" href="./tienda.html">TIENDA</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../pages/comunidad.html">COMUNIDAD</a>
+                        <a class="nav-link" href="./comunidad.html">COMUNIDAD</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
+                        <a class="nav-link" href="./contacto.html">CONTACTO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../pages/acerca.html">ACERCA DE</a>
+                        <a class="nav-link" href="./acerca.html">ACERCA DE</a>
                     </li>
                 </ul>
             </div>
@@ -49,28 +49,41 @@
     </nav>
     <div class="lineaRoja"></div>
     <main class="container">
-        <div class="row justify-content-center mt-5 align-items-center">
-            <div class="col-lg-4 col-md-8 col-sm-12">
-                <span class="acercaDe__descripcion--titulo">GAMES PORTAL</span>
-                <p class="acercaDe__descripcion--info">Games Portal nace como parte de un proyecto integrador del
-                    curso de Desarrollo Web dictado por la plataforma CoderHouse. El portal ofrece una seccion
-                    informativa, con novedades de los ultimos lanzamientos y actualizaciones, una seccion de tienda
-                    con ofertas y un listado de productos y apartados de Comunidad y Contacto, que favorecen la
-                    interaccion entre el desarrollador y los usuarios. Esperamos que su experiencia con la pagina
-                    sea optima y estamos atentos a cualquier sugerencia.</p>
+        <section class="row justify-content-center">
+            <div class="contactos__titulo col-lg-8 col-md-10 col-sm12 mt-4 p-2">
+                <i class="fa-solid fa-envelope destacados__titulo--icono"><h1
+                        class="destacados__titulo--texto mx-2">CONTACTO</h1></i>
+                <p class="mt-2">Dejanos tus consultas o sugerencias a continuacion.</p>
             </div>
-            <div class="col-lg-4 col-md-8 col-sm-12">
-                <img src="../img/coder.jpg" alt="Imagen - CoderHouse">
+            <div class="contacto__formulario col-8">
+                <form class="row justify-content-start">
+                    <div class="col-8 ">
+                        <label for="nombre">Nombre <sup>*</sup></label>
+                        <input type="text" id="nombre" required>
+                    </div>
+                    <div class="col-8">
+                        <label for="apellido">Apellido <sup>*</sup></label>
+                        <input type="text" id="apellido" required>
+                    </div>
+                    <div class="col-8">
+                        <label for="mail">Mail <sup>*</sup></label>
+                        <input type="email" id="mail" required>
+                    </div>
+                    <div class="col-8">
+                        <label for="mensaje">Mensaje <sup>*</sup></label>
+                        <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="col-12 mt-5">
+                        <input type="checkbox" name="" id=""><span class="mx-1">Deseo suscribirme al boletin de
+                            noticias.</span>
+                        <br>
+                        <input type="checkbox" checked required> <span>Acepto los terminos y condiciones.
+                            <sup>*</sup></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary col-lg-1 mt-5">ENVIAR</button>
+                </form>
             </div>
-        </div>
-        <div class="row justify-content-center mt-5">
-            <div class="acercaDe__desarrollador--info col-6 align-items-center mt-1">
-                <span>Desarrollador Web</span>
-                <img src="/assets/img/matt.jpg" alt="Imagen Desarrollador">
-                <span>Matias Fernandez</span>
-                <br>
-            </div>
-        </div>
+        </section>
     </main>
     <footer class="bg-dark text-center text-white">
         <div class="container p-4 pb-0">
@@ -89,4 +102,5 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
