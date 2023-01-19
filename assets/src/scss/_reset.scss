@@ -4,3 +4,15 @@
     box-sizing: border-box;
     font-family: "Bakbak One";
   }
+
+h1{
+  @include inline-20px;
+  font-weight: bold;
+}
+
+h2{
+  @include inline-20px;
+  &:hover{
+    border-bottom: 2px solid white;
+  }
+}

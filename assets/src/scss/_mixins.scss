@@ -2,3 +2,8 @@
     display: flex;
     justify-content: space-evenly;
 }
+
+@mixin inline-20px{
+    display: inline;
+    font-size: 20px;
+}

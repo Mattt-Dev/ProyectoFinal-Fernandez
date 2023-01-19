@@ -5,6 +5,20 @@
   font-family: "Bakbak One";
 }
 
+h1 {
+  display: inline;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h2 {
+  display: inline;
+  font-size: 20px;
+}
+h2:hover {
+  border-bottom: 2px solid white;
+}
+
 .logo {
   width: 64px;
   padding: 10px;
