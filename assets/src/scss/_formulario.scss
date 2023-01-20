@@ -1,26 +1,25 @@
 .contactos__titulo {
-    width: 900px;
-    margin-top: 40px;
+  width: 900px;
+  margin-top: 40px;
+}
+
+.contacto__formulario {
+  margin-top: 20px;
+  width: 900px;
+  sup {
+    color: $rojo;
   }
-  
-  .contacto__formulario {
-    margin-top: 20px;
-    label {
-        padding: 5px;
-        margin: 5px;
-        margin-bottom: 20px;
-      }
-    sup {
-        color: $rojo;
-      }
-    input {
-        margin-left: 25px;
-        padding: 2px;
-    }
-    button {
-        margin: 21px;
-        padding: 5px;
-        font-size: 15px;
-        cursor: $cursor;
-      }
-  }  
+
+  button {
+    margin: 21px;
+    padding: 5px;
+    font-size: 15px;
+    cursor: $cursor;
+  }
+
+  .contacto__campo,
+  textarea {
+    max-width: 400px;
+  }
+
+}

@@ -1,17 +1,28 @@
 .acercaDe__descripcion--titulo {
-    font-size: 45px;
+  font-size: 45px;
+}
+
+.acercaDe__descripcion--info {
+  width: 300px;
+}
+
+.acercaDe__desarrollador--info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+
+  img {
+    border-radius: 50%;
+    width: 128px;
   }
-  
-  .acercaDe__descripcion--info {
+}
+
+.acercaDe__imagen {
+  margin-top: 20px;
+}
+
+@media (max-width: 420px) {
+  .acercaDe__imagen {
     width: 300px;
   }
-  
-  .acercaDe__desarrollador--info {
-    display: flex;
-    flex-direction: column;
-    row-gap: 15px;
-    img{
-        border-radius: 50%;
-        width: 128px;
-    }
-  }
+}

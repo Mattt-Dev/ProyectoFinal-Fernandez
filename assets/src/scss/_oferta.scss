@@ -1,9 +1,11 @@
 .card{
     border: none;
+    padding: 0;
 }
 
 .oferta {
     margin-left: 5px;
+    max-width: 230px;
     &:hover {
         animation-name: redimensionar;
         animation-duration: 0.5s;

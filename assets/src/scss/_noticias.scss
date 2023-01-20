@@ -36,6 +36,15 @@
       }
   }
   
+  @media (max-width: 410px) {
+    .noticias__tarjeta{
+      max-width: 320px;
+    }
+    .noticias__tarjeta--imagen{
+      max-width: 320px;
+    }
+  }
+
   @keyframes redimensionar {
     0% {
       scale: 1;

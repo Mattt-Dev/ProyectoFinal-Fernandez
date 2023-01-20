@@ -116,6 +116,14 @@ h2:hover {
   margin-top: 10px;
 }
 
+@media (max-width: 410px) {
+  .noticias__tarjeta {
+    max-width: 320px;
+  }
+  .noticias__tarjeta--imagen {
+    max-width: 320px;
+  }
+}
 @keyframes redimensionar {
   0% {
     scale: 1;
@@ -160,30 +168,18 @@ h2:hover {
 
 .card {
   border: none;
+  padding: 0;
 }
 
 .oferta {
   margin-left: 5px;
+  max-width: 230px;
 }
 .oferta:hover {
   animation-name: redimensionar;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
   cursor: pointer;
-}
-
-.titulos__juegos--boton {
-  max-width: 100px;
-  height: 50px;
-  position: relative;
-  left: 130px;
-  background-color: #cc0000;
-}
-.titulos__juegos--boton img {
-  max-width: 36px;
-  position: relative;
-  top: 8px;
-  left: 30px;
 }
 
 .page-link {
@@ -233,7 +229,21 @@ h2:hover {
 .foro__posteo .foro__posteo--info h4 {
   font-size: 18px;
 }
+@media (max-width: 475px) {
+  .foro__posteo .foro__posteo--info {
+    padding: 5px;
+  }
+}
 
+.foro__footer {
+  margin-top: 55px;
+}
+
+@media (max-width: 490px) {
+  .foro__posteo {
+    width: 90vw;
+  }
+}
 .contactos__titulo {
   width: 900px;
   margin-top: 40px;
@@ -241,24 +251,20 @@ h2:hover {
 
 .contacto__formulario {
   margin-top: 20px;
-}
-.contacto__formulario label {
-  padding: 5px;
-  margin: 5px;
-  margin-bottom: 20px;
+  width: 900px;
 }
 .contacto__formulario sup {
   color: #cc0000;
-}
-.contacto__formulario input {
-  margin-left: 25px;
-  padding: 2px;
 }
 .contacto__formulario button {
   margin: 21px;
   padding: 5px;
   font-size: 15px;
   cursor: pointer;
+}
+.contacto__formulario .contacto__campo,
+.contacto__formulario textarea {
+  max-width: 400px;
 }
 
 .acercaDe__descripcion--titulo {
@@ -277,4 +283,14 @@ h2:hover {
 .acercaDe__desarrollador--info img {
   border-radius: 50%;
   width: 128px;
+}
+
+.acercaDe__imagen {
+  margin-top: 20px;
+}
+
+@media (max-width: 420px) {
+  .acercaDe__imagen {
+    width: 300px;
+  }
 }/*# sourceMappingURL=style.css.map */

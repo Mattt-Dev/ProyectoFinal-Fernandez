@@ -56,48 +56,61 @@
                 <p class="mt-2">Dejanos tus consultas o sugerencias a continuacion.</p>
             </div>
             <div class="contacto__formulario col-8">
-                <form class="row justify-content-start">
-                    <div class="col-8 ">
-                        <label for="nombre">Nombre <sup>*</sup></label>
-                        <input type="text" id="nombre" required>
+                <form>
+                <div class="row mb-3">
+                    <label for="nombre" class="col-sm-2 col-form-label">Nombre <sup>*</sup></label>
+                    <div class="col-sm-10">
+                    <input type="text" class="form-control contacto__campo" id="nombre">
                     </div>
-                    <div class="col-8">
-                        <label for="apellido">Apellido <sup>*</sup></label>
-                        <input type="text" id="apellido" required>
+                </div>
+                <div class="row mb-3">
+                    <label for="apellido" class="col-sm-2 col-form-label">Apellido <sup>*</sup></label>
+                    <div class="col-sm-10">
+                    <input type="text" class="form-control contacto__campo" id="apellido">
                     </div>
-                    <div class="col-8">
-                        <label for="mail">Mail <sup>*</sup></label>
-                        <input type="email" id="mail" required>
+                </div>
+                <div class="row mb-3">
+                    <label for="mail" class="col-sm-2 col-form-label">Mail <sup>*</sup></label>
+                    <div class="col-sm-10">
+                    <input type="email" class="form-control contacto__campo" id="mail">
                     </div>
-                    <div class="col-8">
-                        <label for="mensaje">Mensaje <sup>*</sup></label>
-                        <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
+                </div>
+                <div class="row mb-3">
+                    <label for="mensaje" class="col-sm-2 col-form-label">Mensaje <sup>*</sup></label>
+                    <div class="col-sm-10">
+                    <textarea name="" id="mensaje" class="form-control contacto__campo" rows="10"></textarea>
                     </div>
-                    <div class="col-12 mt-5">
-                        <input type="checkbox" name="" id=""><span class="mx-1">Deseo suscribirme al boletin de
-                            noticias.</span>
-                        <br>
-                        <input type="checkbox" checked required> <span>Acepto los terminos y condiciones.
-                            <sup>*</sup></span>
-                    </div>
-                    <button type="submit" class="btn btn-primary col-lg-1 mt-5">ENVIAR</button>
+                </div>
+                <div class="form-check mt-5">
+                    <input class="form-check-input" type="checkbox" value="" id="boletin">
+                    <label class="form-check-label" for="boletin">
+                      Deseo suscribirme al boletin de noticias.
+                    </label>
+                </div>
+                <div class="form-check mt-3">
+                    <input class="form-check-input" type="checkbox" value="" id="terminos" checked required>
+                    <label class="form-check-label" for="terminos">
+                      Acepto los terminos y condiciones. <sup>*</sup>
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary mt-5">ENVIAR</button>
                 </form>
             </div>
         </section>
     </main>
     <footer class="bg-dark text-center text-white">
         <div class="container p-4 pb-0">
-            <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button"><i
-                    class="fab fa-facebook-f"></i></a>
-            <a class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="#!" role="button"><i
-                    class="fab fa-twitter"></i></a>
-            <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button"><i
-                    class="fab fa-instagram"></i></a>
+          <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="https://www.facebook.com/profile.php?id=1616366726" role="button"><i
+              class="fab fa-facebook-f"></i></a>
+          <a class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="https://twitter.com/MatttzTM" role="button"><i
+              class="fab fa-twitter"></i></a>
+          <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="https://www.instagram.com/matttztm/" role="button"><i
+              class="fab fa-instagram"></i></a>
         </div>
         <div class="text-center p-3 bg-dark">
-            <span>Games Portal <sup>TM</sup> 2022 - Todos los derechos reservados.</span>
+          <span>Games Portal <sup>TM</sup> 2022 - Todos los derechos reservados.</span>
         </div>
-    </footer>
+      </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
